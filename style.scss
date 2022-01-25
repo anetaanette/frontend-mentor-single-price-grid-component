@@ -129,27 +129,30 @@ body {
   }
 }
 
-@media only screen and (max-width: 475px) {
+@media all and (max-width: 575px) {
   body {
-    height: 100%;
-    width: 100%;
-    main {
-      .grid {
-        margin: 0 auto;
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-areas: "top" "middle" "bottom";
-        > .top {
-          grid-area: top;
-        }
-        > .bottom__left {
-          grid-area: middle;
-        }
-        > .bottom__right {
-          grid-area: bottom;
-        }
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      /* > .top {
+        grid-column: 1/2;
+        grid-row: 1/2;
       }
+      > .bottom__left {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+      }
+      > .bottom__right {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+      } */
     }
   }
 }

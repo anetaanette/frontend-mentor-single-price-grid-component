@@ -175,33 +175,37 @@ body footer > .attribution a {
   color: #3e52a3;
 }
 
-@media only screen and (max-width: 475px) {
+@media all and (max-width: 575px) {
   body {
-    height: 100%;
-    width: 100%;
-  }
-  body main .grid {
     margin: 0 auto;
-    height: 100%;
-    width: 100%;
+    width: 300px;
+    height: auto;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "top" "middle" "bottom";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
   }
-  body main .grid > .top {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: top;
-  }
-  body main .grid > .bottom__left {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: middle;
-  }
-  body main .grid > .bottom__right {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: bottom;
+  body .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    /* > .top {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      > .bottom__left {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+      }
+      > .bottom__right {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+      } */
   }
 }
 /*# sourceMappingURL=style.css.map */
