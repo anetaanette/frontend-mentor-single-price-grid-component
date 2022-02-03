@@ -2,8 +2,8 @@
 
 ### Screenshot
 
-![Desktop]()
-![Mobile]()
+![Desktop](https://github.com/anetaanette/frontend-mentor-single-price-grid-component/blob/main/images/screenshot-desktop.png)
+![Mobile](https://github.com/anetaanette/frontend-mentor-single-price-grid-component/blob/main/images/screenshot-mobile.png)
 
 ### Links
 
