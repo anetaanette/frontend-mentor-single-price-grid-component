@@ -14,6 +14,7 @@
 }
 
 html {
+  overflow-x: hidden;
   font-size: 16px;
   font-family: "Karla", sans-serif;
 }
@@ -132,15 +133,13 @@ body {
 
 @media all and (max-width: 575px) {
   body {
-    margin: 100px auto;
+    margin: 50px auto;
     max-width: 500px;
-    height: 100%;
     > main {
       width: 90%;
       height: 800px;
       > .grid {
         display: grid;
-        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         > .top {
@@ -157,9 +156,8 @@ body {
     > footer {
       position: absolute;
       width: 100%;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
+      height: 0;
+      bottom: -15%;
     }
   }
 }
